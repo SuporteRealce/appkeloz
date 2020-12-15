@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="iso-8859-1">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Keloz Transporte</title>
+
+    <!-- links de css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/meu.js"></script>
+</head>
+<body>
+
+    <div class="login">
+        <div class="">
+            <div class="row">
+                <div class="col-12">
+                    <div class="login-header">
+                        <img src="img/logo.png">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="login-body">
+                        <!-- tabs -->
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-link active" id="nav-rastrear-tab" data-toggle="tab" href="#nav-rastrear" role="tab" aria-controls="nav-rastrear" aria-selected="true">Rastrear</a>
+                                <a class="nav-link" id="nav-motorista-tab" data-toggle="tab" href="#nav-motorista" role="tab" aria-controls="nav-motorista" aria-selected="false">Motorista</a>
+                            </div>
+                        </nav>
+
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- tab para rastrear -->
+                            <div class="tab-pane fade show active" id="nav-rastrear" role="tabpanel" aria-labelledby="nav-rastrear-tab">
+                                <div class="formulario-login">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="bloco-input">
+                                                    <input type="text" placeholder="CPF/CNPJ" class="cpfcnpj">
+                                                </div>
+                                                <div class="bloco-input">
+                                                    <input type="text" placeholder="Nota Físcal">
+                                                </div>
+                                                <div class="bloco-input">
+                                                    <input type="button" value="Fazer Login" class="loginCliente">
+                                                </div>
+                                                <div class="bloco-input">
+                                                    <a href="#">Esqueçeu a senha?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- tab motorista -->
+                            <div class="tab-pane fade" id="nav-motorista" role="tabpanel" aria-labelledby="nav-motorista-tab">
+                                <div class="formulario-login">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="bloco-input">
+                                                    <input type="text" placeholder="Usuário">
+                                                </div>
+                                                <div class="bloco-input">
+                                                    <input type="password" placeholder="Senha">
+                                                    <div class="btn-password">
+                                                        <i class="fa fa-eye"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="bloco-input">
+                                                    <input type="button" value="Fazer Login" class="loginMotorista">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /tabs -->
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script> 
+    <script>
+        //script para o botão password
+        $('.btn-password').on('click', function(){
+            $(this).find('.fa-eye').toggleClass('fa-eye-slash');
+            if($('.btn-password i').hasClass('fa-eye-slash')){
+                $('.btn-password').prev('input').attr('type', 'text');
+            } else {
+                $('.btn-password').prev('input').attr('type', 'password');
+            }
+        });
+
+        $('.loginCliente').click(function(){
+            window.location.href = 'cliente_inicio.html';
+        });
+        $('.loginMotorista').click(function(){
+            window.location.href = 'motorista_inicio.html';
+        });
+    </script>
+</body>
+</html>

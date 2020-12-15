@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="iso-8859-1">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Keloz Transporte</title>
+
+    <!-- links de css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/meu.js"></script>
+</head>
+<body>
+
+    <!-- nav menu -->
+    <div class="nav nav-maior">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="conteudo-nav">
+                        <!-- botão do menu -->
+                        <div class="btn-nav">
+                            <span></span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-10">
+                    <div class="conteudo-nav" style="position: absolute; width: 100%; left: 50%; transform: translateX(-50%);">
+                        <h1>Registro de Ocorrência</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /nav menu -->
+
+    <!-- menu lateral -->
+    <div class="menu-lateral">
+        <div class="contencao">
+
+            <!-- header do sidebar, nome do usuário -->
+            <div class="header-menu-lateral">
+                <h1><span>Olá</span><br>Fanuel Souza!</h1>
+                <div class="close-menu-lateral btn-nav">
+                    <img src="img/icone_add.png">
+                </div>
+            </div>
+            <!-- /header do sidebar, nome do usuário -->
+
+            <!-- corpo do sidebar, opções do usuário -->
+            <div class="body-menu-lateral">
+                <ul>
+                    <li><a href="motorista_inicio.html"><i class="fa fa-envelope-open-o"></i> Início</a></li>
+                    <li><a href="motorista_minha_entrega.html"><i class="fa fa-check-square-o"></i> Minhas Entregas</a></li>
+                    <li><a href="motorista_concluir_entrega.html"><i class="fa fa-handshake-o"></i> Realizar Entregas</a></li>
+                    <li><a href="motorista_registro_ocorrencia.html"><i class="fa fa-file-text-o"></i> Registro de Ocorrência</a></li>
+                </ul>
+            </div>
+            <!-- /corpo do sidebar, opções do usuário -->
+
+            <!-- footer do sidebar, opção para sair -->
+            <div class="footer-menu-lateral">
+                <ul>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                </ul>
+            </div>
+            <!-- /footer do sidebar, opção para sair -->
+
+        </div>
+    </div>
+    <!-- /menu lateral -->
+
+    <!-- busca -->
+    <div class="busca">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="conteudo-formulario">
+                        <div class="conteudo-formulario-icone">
+                            <button>
+                                <img src="img/icone_search.png">
+                            </button>
+                        </div>
+                        <div class="conteudo-formulario-input">
+                            <input type="text" placeholder="Digite um nome ou um número..." class="cpfcnpj">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /busca -->
+
+     <!-- encomenda -->
+    <div class="encomenda">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- bloco 01 -->
+                    <div class="bloco-encomenda" onclick="location.href='motorista_confirmar_ocorrencia.html'">
+                        <div class="bloco-encomenda-header">
+                            <div class="bloco-encomenda-header-titulo">
+                                <h1>Nome do Produto</h1>
+                                <h1><span>nº 95 259 105</span></h1>
+                            </div>
+                            <div class="bloco-encomenda-header-status">
+                                <span></span>
+                            </div>
+                        </div>
+                            <div class="bloco-encomenda-body">
+                                <div class="bloco-encomenda-info">
+                                    <p><span>Cliente</span></p>
+                                    <p>Fanuel Crispim de Souza</p>
+                                </div>
+                            <div class="bloco-encomenda-info">
+                                <p><span>Endereço</span></p>
+                                <p>Rua Princeza Isabel, 50 - bnh - Cristina/MG</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bloco 02 -->
+                    <div class="bloco-encomenda" onclick="location.href='motorista_confirmar_ocorrencia.html'">
+                        <div class="bloco-encomenda-header">
+                            <div class="bloco-encomenda-header-titulo">
+                                <h1>Nome do Produto</h1>
+                                <h1><span>nº 95 259 105</span></h1>
+                            </div>
+                            <div class="bloco-encomenda-header-status">
+                                <span></span>
+                            </div>
+                        </div>
+                            <div class="bloco-encomenda-body">
+                                <div class="bloco-encomenda-info">
+                                    <p><span>Cliente</span></p>
+                                    <p>Fanuel Crispim de Souza</p>
+                                </div>
+                            <div class="bloco-encomenda-info">
+                                <p><span>Endereço</span></p>
+                                <p>Rua Princeza Isabel, 50 - bnh - Cristina/MG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- encomenda -->
+        
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
