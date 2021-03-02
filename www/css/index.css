@@ -73,6 +73,11 @@ html, body {
     color: white;
     font-weight: 300;
 }
+.conteudo-nav span {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
 .btn-nav span {
     position: relative;
     width: 22px;
@@ -313,18 +318,19 @@ nav .nav-link.active {
 .confirmar {
     position: relative;
     width: 100%;
-    margin: 15px 0px;
+    margin: 0px 0px;
 }
 .titulo-confirmar {
     position: relative;
     width: 100%;
-    padding: 20px 15px;
+    padding: 10px 15px;
     background-color: var(--fundo);
 }
 .titulo-confirmar h1 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
+    margin: 0px;
 }
 .bloco-confirmar-titulo {
     padding: 20px 0px;
@@ -353,11 +359,23 @@ nav .nav-link.active {
 .bloco-confirmar p span {
     color: var(--fonte-claro);
 }
-.bloco-confirmar select {
+.bloco-confirmar select, .bloco-confirmar input {
     width: 100%;
     background-color: transparent;
     height: 55px;
     padding-left: 10px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    font-weight: 300;
+    margin-top: 5px;
+    outline: none;
+}
+.bloco-confirmar textarea {
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 3px;
     font-weight: 300;
@@ -677,3 +695,36 @@ nav .nav-link.active {
     margin: 0px auto;
     text-align: center;
 }
+
+.custom-btn {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-weight: 300;
+    font-size: 20px;
+    border: none;
+    background-color: #353839;
+}
+.bloco-confirmar-status {
+    padding: 0px 0px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;   
+}
+th {
+    background-color: var(--fonte-claro);
+    color: white;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid rgba(0,0,0,.1);
+  font-weight: 300;
+}
+td p {
+    font-size: 13px;
+}
+tr:nth-child(even){background-color: #f2f2f2}

@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-10">
                     <div class="conteudo-nav" style="position: absolute; width: 100%; left: 50%; transform: translateX(-50%);">
-                        <h1>Bem Vindo(a)!</h1>
+                        <h1>Keloz Transporte</h1>
                     </div>
                 </div>
             </div>
@@ -61,10 +61,8 @@
             <!-- corpo do sidebar, opções do usuário -->
             <div class="body-menu-lateral">
                 <ul>
-                    <li><a href="motorista_inicio.html"><i class="fa fa-envelope-open-o"></i> Início</a></li>
-                    <li><a href="motorista_minha_entrega.html"><i class="fa fa-check-square-o"></i> Minhas Entregas</a></li>
-                    <li><a href="motorista_concluir_entrega.html"><i class="fa fa-handshake-o"></i> Realizar Entregas</a></li>
-                    <li><a href="motorista_registro_ocorrencia.html"><i class="fa fa-file-text-o"></i> Registro de Ocorrência</a></li>
+                    <li><a href="motorista_inicio.html"><i class="fa fa-home"></i> Início</a></li>
+                    <li><a href="motorista_minha_entrega.html"><i class="fa fa-truck"></i> Entregas</a></li>
                 </ul>
             </div>
             <!-- /corpo do sidebar, opções do usuário -->
@@ -82,11 +80,14 @@
     <!-- /menu lateral -->
 
     <!-- opcao -->
-    <div class="opcao">
+    <div class="opcao" style="padding-top: 10px; padding-bottom: 20px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="conteudo-opcao">
+
+                    <!-- antigo -------------------------------------
+                    ------------------------------------------------>
+                    <div class="conteudo-opcao" style="display: none">
 
                         <!-- bloco opção 01 -->
                         <div class="bloco-opcao" onclick="location.href='motorista_minha_entrega.html'">
@@ -118,6 +119,10 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- novo ---------------------------------------
+                    ------------------------------------------------>
+                    <button type="button" class="btn btn-primary custom-btn" onclick="location.href='motorista_minha_entrega.html'"><i class="fa fa-truck"></i> Minhas Entregas</button>
                 </div>
             </div>
         </div>
@@ -125,7 +130,7 @@
     <!-- /opcao -->
 
     <!-- busca -->
-    <div class="busca">
+    <div class="busca" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -149,6 +154,220 @@
         </div>
     </div>
     <!-- /busca -->
+
+    <!-- novo ---------------------------------------
+    ------------------------------------------------>
+    <!-- encomenda -->
+    <div class="encomenda">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="conteudo-busca" style="padding-top: 0px;">
+                        <h1>Encomenda Recentes</h1>
+                    </div>
+                </div>
+
+                <div class="col-12">
+
+                    <!-- bloco 01 -->
+                    <div class="bloco-encomenda" data-target="#modalMotorista" data-toggle="modal">
+                        <div class="bloco-encomenda-body" style="padding-top: 0px;">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Cliente</span></p>
+                                        <p>Fanuel C. de Souza</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Data</span></p>
+                                        <p>12.03.2021</p>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>CTE</span></p>
+                                        <p>1041</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>NF</span></p>
+                                        <p>000.000.394</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Status</span></p>
+                                        <p>Em trânsito</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bloco 02 -->
+                    <div class="bloco-encomenda" data-target="#modalMotorista" data-toggle="modal">
+                        <div class="bloco-encomenda-body" style="padding-top: 0px;">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Cliente</span></p>
+                                        <p>Antonio E. Soares</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Data</span></p>
+                                        <p>12.03.2021</p>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>CTE</span></p>
+                                        <p>1041</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>NF</span></p>
+                                        <p>000.000.394</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Status</span></p>
+                                        <p>Entregue</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bloco 03 -->
+                    <div class="bloco-encomenda" data-target="#modalMotorista" data-toggle="modal">
+                        <div class="bloco-encomenda-body" style="padding-top: 0px;">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Cliente</span></p>
+                                        <p>Viviane T. dos Santos</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Data</span></p>
+                                        <p>12.03.2021</p>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>CTE</span></p>
+                                        <p>1041</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>NF</span></p>
+                                        <p>000.000.394</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="bloco-encomenda-info">
+                                        <p><span>Status</span></p>
+                                        <p>Entregue</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- encomenda -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalMotorista" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="confirmar">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="titulo-confirmar">
+                                    <h1>Você realmente confirma essa entrega?</h1>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="bloco-confirmar">
+                                    <p><span>Nome</span></p>
+                                    <p>Fanuel C. de Souza</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="bloco-confirmar">
+                                    <p><span>Data</span></p>
+                                    <p>12.02.2021</p>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="bloco-confirmar">
+                                    <p><span>NF</span></p>
+                                    <p>000.000.394</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="bloco-confirmar">
+                                    <p><span>CTE</span></p>
+                                    <p>1041</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="bloco-confirmar">
+                                    <p><span>Ocorrência</span></p>
+                                    <select>
+                                        <option value="">Selecionar</option>
+                                        <option value="">Trânsito</option>
+                                        <option value="">Entregue</option>
+                                        <option value="">Ocorreu Problema</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="bloco-confirmar">
+                                    <p><span>Informação</span></p>
+                                    <textarea placeholder="Informação adicional"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="bloco-btn-foto">
+                                    <p>Adicionar Foto</p>
+                                    <label for="file">
+                                        <img src="img/icone_add.png">
+                                    </label>
+                                    <input type="file" id="file">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="btn-confirmar">
+                                    <input type="button" value="Confirmar Entrega">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
         
     <script src="cordova.js"></script>
     <script src="js/index.js"></script>
